@@ -177,7 +177,8 @@ h2 {
 }
 /* cards */
 
-
+.cardSection{
+   padding: 0px 8px;
 
 .cards{
    padding: .8em; 
