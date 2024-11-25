@@ -152,21 +152,25 @@ h2 {
       margin-right: 5px;
    }
 
-   .card-container{
+.card-container{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: .3rem;
      align-content: start;
      width: 100%;
-     padding: 0;
+     padding: 4px;
+      
+         overflow: hidden;
    }
    .card{
       background: white;
-      
+      border: 1px solid #777;
       border-radius: .25rem;
       overflow: hidden;
-      min-height: 200px;
+      min-height: 100px;
       max-width: auto;
+    
+      
       
    }
 
@@ -174,11 +178,7 @@ h2 {
 /* cards */
 
 
-.cardSection{
 
-background-color: var(--nav-blue);
-border: 1px solid var(--nav-blue);
-}
 .cards{
    padding: .8em; 
    background-color:var(--nav-blue) ;
@@ -203,7 +203,13 @@ border: 1px solid var(--nav-blue);
    
    
 }
-
+.cards{
+     display: flex;
+  padding: 0;
+   margin: 0;
+ 
+   justify-content: center;
+}
 
 .card-footer{
    display: flex;
@@ -268,7 +274,7 @@ cursor: pointer;
 .card-header.card-img > img {
    display: block;
    width: 100%;
-   aspect-ratio: 16 / 9;
+   
    object-fit: cover;
    max-height: 200px;
    object-position: center;
@@ -280,12 +286,7 @@ cursor: pointer;
    
 }
 
-.cards{
-   padding: 0;
-   margin: 0;
-   display: flex;
-   justify-content: center;
-}
+
 /* contact */
 .contactHeader h1{
 width: 100%;
